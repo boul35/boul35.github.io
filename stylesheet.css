@@ -70,7 +70,6 @@ img {
   color: black;
   padding: 50px;
   font-family: 'Nunito Sans', sans-serif;
-  
 }
 
 .portfolio {
@@ -80,7 +79,6 @@ img {
   background-color: grey;
   color: black;
   font-family: 'Nunito Sans', sans-serif;
-  
 }
 
 #Portfolio {
@@ -89,8 +87,6 @@ img {
   background-color: grey;
   color: black;
   font-family: 'Ubuntu', sans-serif;
-  display: flex;
-  flex-direction: row;
 }
 
 .btn {
