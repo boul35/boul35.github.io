@@ -1,0 +1,144 @@
+/*NavBar*/
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li.name {
+  color: white;
+  dislpay: block;
+  text-align: center;
+  padding: 8px;
+  font-size: 16px;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+li {
+  float: right;
+}
+
+li a {
+  border-radius: 12px;
+  color: white;
+  background-color: #222;
+  display: block;
+  text-align: center;
+  padding: 8px;
+  text-decoration: none;
+  font-size: 12px;
+  font-family: 'Nunito Sans', sans-serif;
+}
+
+li a:hover {
+  border-radius: 12px;
+  color: white;
+  text-decoration: none;
+  background-color: #111;
+  font-family: 'Nunito Sans', sans-serif;
+}
+
+
+/*EndNavBar*/
+
+#Mephoto {
+  border: solid;
+  border-radius: 150px;
+  margin: 50px;
+  padding: 60px;
+  float: right;
+}
+
+img {
+  border: solid;
+  border-radius: 25px;
+  padding: 50px;
+  float: left;
+}
+
+#Ah1 {
+  font-family: 'Ubuntu', sans-serif;
+}
+
+#aboutme {
+  text-align: center;
+  font-size: 18px;
+  background-color: silver;
+  color: black;
+  padding: 50px;
+  font-family: 'Nunito Sans', sans-serif;
+  
+}
+
+.portfolio {
+  padding: 50px;
+  font-size: 20px;
+  text-align: center;
+  background-color: grey;
+  color: black;
+  font-family: 'Nunito Sans', sans-serif;
+  
+}
+
+#Portfolio {
+  padding: 50px;
+  text-align: center;
+  background-color: grey;
+  color: black;
+  font-family: 'Ubuntu', sans-serif;
+  display: flex;
+  flex-direction: row;
+}
+
+.btn {
+  border-radius: 15px;
+  margin: 0 auto;
+  padding: 50px 35px;
+  font-family: 'Nunito Sans', sans-serif;
+}
+
+.btn:hover {
+  font-family: 'Nunito Sans', sans-serif;
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+
+#pBtn {
+  text-align: center;
+  font-family: 'Nunito Sans', sans-serif;
+}
+
+#Contact {
+  padding: 30px;
+  text-align: center;
+  background-color: black;
+  color: grey;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+#icons {
+  font-size: 24px;
+  color: black;
+}
+
+#icons:hover {
+  color: silver
+}
+
+#fcc {
+  padding: 20px;
+}
+
+#lnkdn {
+  padding: 20px;
+}
+
+#git {
+  padding: 20px;
+}
+
+#gmail {
+  padding: 20px;
+}
