@@ -1,11 +1,20 @@
 /*NavBar*/
 
+body {
+	
+	background-image: url('wallpaper.jpg');
+	background-attachment: fixed;
+}
 ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
   overflow: hidden;
   background-color: #333;
+}
+#pBtn {
+  text-align: center;
+  font-family: 'Nunito Sans', sans-serif;
 }
 
 li.name {
@@ -43,14 +52,68 @@ li a:hover {
 
 
 /*EndNavBar*/
+.clearfix {
+	
+	
+	overflow: auto;
+}
 
 #Mephoto {
   border: solid;
-  border-radius: 150px;
-  margin: 50px;
-  padding: 60px;
+  border-radius: 350px;
+  margin-right: 230px;
   float: right;
+  opacity:0.5;
+  
+   
 }
+
+#Mephoto:hover {
+  
+  opacity:1;
+  background-color:red;
+    color: white;
+  font-size: 20px;
+  border-radius: 320px;
+   
+  
+  background-color: #FB4673;
+  
+  
+     
+ 
+   
+}
+.text {
+
+ color: black;
+ font-family: 'Ubuntu', sans-serif;
+ font-size: 32px;
+	border: #FB4673;
+	margin: auto;
+	margin-left: 210px;
+	margin-top: 20px;
+	
+
+ 
+ 
+ 
+}
+
+.container:hover .overlay {
+  opacity: 1;
+}
+
+.overlay {
+  
+  opacity: 0;
+  transition: .5s ease;
+  background-color: transparent;
+  margin-right: 0px;
+  float: right;
+  
+}
+
 
 img {
   border: solid;
@@ -60,81 +123,123 @@ img {
 }
 
 #Ah1 {
-  font-family: 'Ubuntu', sans-serif;
+  font-family: 'Trade Winds';
+  text-align: center;
+  margin-top: 100px;
+  color: white;
+  font-size: 80px;
+  text-decoration: underline;
 }
 
 #aboutme {
-  text-align: center;
+  text-align: left;
   font-size: 18px;
+  font-family: ;Oswald;
   background-color: silver;
   color: black;
   padding: 50px;
   font-family: 'Nunito Sans', sans-serif;
+  margin-left: 200px;
+  margin-right: 200px;
+  border: solid white;
 }
+/* relevant styles */
 
 .portfolio {
-  padding: 50px;
+  padding: 0px;
   font-size: 20px;
   text-align: center;
-  background-color: grey;
+  background-color: silver;
   color: black;
   font-family: 'Nunito Sans', sans-serif;
+  
+  
 }
 
 #Portfolio {
   padding: 50px;
   text-align: center;
-  background-color: grey;
+  background-color: silver;
   color: black;
   font-family: 'Ubuntu', sans-serif;
+   margin-left: 200px;
+  margin-right: 200px;
+  border: solid #ff6699;
+  
 }
 
 .btn {
   border-radius: 15px;
-  margin: 0 auto;
-  padding: 50px 35px;
+  margin: 0 2px;
+  padding: 10px 3px;
   font-family: 'Nunito Sans', sans-serif;
+  display: flex;
+  margin-right: 120px;
+  
+  
 }
 
 .btn:hover {
   font-family: 'Nunito Sans', sans-serif;
-  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+ box-shadow: 10px 9px 62px 82px rgba(223,35,60,0.65);
 }
 
 #pBtn {
   text-align: center;
   font-family: 'Nunito Sans', sans-serif;
+  display: flex;
+ width: 10px;
+  margin: 10px;
 }
 
 #Contact {
   padding: 30px;
   text-align: center;
-  background-color: black;
+  background-color: silver;
   color: grey;
   font-family: 'Ubuntu', sans-serif;
+    padding: 50px;
+  text-align: center;
+ margin-top: 20px;
+  color: black;
+  font-family: 'Ubuntu', sans-serif;
+   margin-left: 200px;
+  margin-right: 200px;
+  border: solid #ff6699;
 }
 
 #icons {
   font-size: 24px;
-  color: black;
+  
+  text-decoration:none; 
+  color:inherit;
 }
 
 #icons:hover {
-  color: silver
+  color: pink;
+  text-decoration:none; 
+  color:inherit;
 }
 
 #fcc {
   padding: 20px;
+   text-decoration:none; 
+  color:inherit;
 }
 
 #lnkdn {
   padding: 20px;
+   text-decoration:none; 
+  color:inherit;
 }
 
 #git {
   padding: 20px;
+   text-decoration:none; 
+  color:inherit;
 }
 
 #gmail {
   padding: 20px;
+  
 }
