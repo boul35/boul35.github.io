@@ -1,245 +1,107 @@
-/*NavBar*/
+<!DOCTYPE html>
+<html>
+<head>
+<title> Jean-Philippe Moffet Website</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Trade+Winds&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Covered+By+Your+Grace&display=swap" rel="stylesheet">
 
-body {
+<link rel="stylesheet" type="text/css" href="stylesheet.css">
+</head>
+<body>
+<h1 id="Ah1">About Me</h1>
+<div class="clearfix">
+
+ </div>
+ <div class="container">
+    <img id="Mephoto" src="anime.png" alt="Picture of Me"></img>
+	<div class="overlay">
+	   
+		</div>
+		</div>
+
 	
-	background-image: url('wallpaper.jpg');
-	background-attachment: fixed;
-}
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: #333;
-}
-#pBtn {
-  text-align: center;
-  font-family: 'Nunito Sans', sans-serif;
-}
+</div>
+<span>
+<h2 id="signature">Jean-Philippe Moffet ---></h2>
+<p id="aboutme"> "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident,
+ similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio.
+ Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus.
+ Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae.
+ Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat." </p>
+<div id="Portfolio" class="container-fluid">
+  <div class="portfolio">
+    <h2>Portfolio</h2>
+    <p>In process.<br>Will update with progress.</p>
+  </div>
+  <div id="pBtn" class="row">
+    <div class="col-md-4">
+      <button type="button" class="btn">
+	  <img src="linux.png" alt="Project"></img>
+    </button>
+    </div>
+    <div class="col-md-4">
+      <button type="button" class="btn">
+	  <img src="raspberry.png"alt="Project"></img>
+    </button>
+    </div>
+    <div class="col-md-4">
+      <button type="button" class="btn">
+	  <img src="litecoin.png" alt="Project"></img>
+    </button>
+    </div>
+  </div>
+</div>
 
-li.name {
-  color: white;
-  dislpay: block;
-  text-align: center;
-  padding: 8px;
-  font-size: 16px;
-  font-family: 'Ubuntu', sans-serif;
-}
-
-li {
-  float: right;
-}
-
-li a {
-  border-radius: 12px;
-  color: white;
-  background-color: #222;
-  display: block;
-  text-align: center;
-  padding: 8px;
-  text-decoration: none;
-  font-size: 12px;
-  font-family: 'Nunito Sans', sans-serif;
-}
-
-li a:hover {
-  border-radius: 12px;
-  color: white;
-  text-decoration: none;
-  background-color: #111;
-  font-family: 'Nunito Sans', sans-serif;
-}
+<!---CONTACT--->
+<div id="Contact" class="contact" class="container-fluid">
+  <div class="row">
+    <h1 style="text:center" class="col-sm-12">Contact Me:</h1>
+    <div class="row" id="icons">
+      <div class="col-sm-12">
+        <span id="gmail" class="fa fa-lrg">
+			<a  href="#"><i class="fa fa-2x fa-envelope"></i></a>
+		</span>
 
 
-/*EndNavBar*/
-.clearfix {
+        <span id="fcc" class="fa fa-lrg">
 	
-	
-	overflow: auto;
-}
-
-#Mephoto {
-  border: solid;
-  border-radius: 350px;
-  margin-right: 230px;
-  float: right;
-  opacity:0.5;
-  
-   
-}
-
-#Mephoto:hover {
-  
-  opacity:1;
-  background-color:red;
-    color: white;
-  font-size: 20px;
-  border-radius: 320px;
-   
-  
-  background-color: #FB4673;
-  
-  
-     
- 
-   
-}
-.text {
-
- color: black;
- font-family: 'Ubuntu', sans-serif;
- font-size: 32px;
-	border: #FB4673;
-	margin: auto;
-	margin-left: 210px;
-	margin-top: 20px;
-	
-
- 
- 
- 
-}
-
-.container:hover .overlay {
-  opacity: 1;
-}
-
-.overlay {
-  
-  opacity: 0;
-  transition: .5s ease;
-  background-color: transparent;
-  margin-right: 0px;
-  float: right;
-  
-}
+			<a href="#" target="blank"><i class="fa fa-free-code-camp fa-2x"></i></a>
+			
+	</span>
 
 
-img {
-  border: solid;
-  border-radius: 25px;
-  padding: 50px;
-  float: left;
-}
+        <span id="lnkdn" class="fa fa-lrg">
+          <a href="#" target="blank"><i class="fa fa-linkedin fa-2x"></i></a>
+          </span>
 
-#Ah1 {
-  font-family: 'Trade Winds';
-  text-align: center;
-  margin-top: 100px;
-  color: white;
-  font-size: 80px;
-  text-decoration: underline;
-}
+        <span id="git" class="fa fa-lrg">
+		<a href="#" target="blank"><i class=" fa fa-github fa-2x"></i></a>
+	</span>
 
-#aboutme {
-  text-align: left;
-  font-size: 18px;
-  font-family: ;Oswald;
-  background-color: silver;
-  color: black;
-  padding: 50px;
-  font-family: 'Nunito Sans', sans-serif;
-  margin-left: 200px;
-  margin-right: 200px;
-  border: solid white;
-}
-/* relevant styles */
+      </div>
+      <!---Possibly use this in Contact form-
+	<div class="row">
+		<div class="col-xs-6">
+			<form class="action_page.php">
+				Name:<br>
+				<input type="text" name="Name" value="Your Name"></input>
+				<br><br> E-mail:
+				<br>
+				<input type="text" name="email" value="E-mail"></input><br><br>
+				<textarea name="Message" rows="10" cols="30">Message me.</textarea> 
 
-.portfolio {
-  padding: 0px;
-  font-size: 20px;
-  text-align: center;
-  background-color: silver;
-  color: black;
-  font-family: 'Nunito Sans', sans-serif;
-  
-  
-}
+--->
+    </div>
+  </div>
+</div>
 
-#Portfolio {
-  padding: 50px;
-  text-align: center;
-  background-color: silver;
-  color: black;
-  font-family: 'Ubuntu', sans-serif;
-   margin-left: 200px;
-  margin-right: 200px;
-  border: solid #ff6699;
-  
-}
 
-.btn {
-  border-radius: 15px;
-  margin: 0 2px;
-  padding: 10px 3px;
-  font-family: 'Nunito Sans', sans-serif;
-  display: flex;
-  margin-right: 120px;
-  
-  
-}
 
-.btn:hover {
-  font-family: 'Nunito Sans', sans-serif;
- box-shadow: 10px 9px 62px 82px rgba(223,35,60,0.65);
-}
 
-#pBtn {
-  text-align: center;
-  font-family: 'Nunito Sans', sans-serif;
-  display: flex;
- width: 10px;
-  margin: 10px;
-}
 
-#Contact {
-  padding: 30px;
-  text-align: center;
-  background-color: silver;
-  color: grey;
-  font-family: 'Ubuntu', sans-serif;
-    padding: 50px;
-  text-align: center;
- margin-top: 20px;
-  color: black;
-  font-family: 'Ubuntu', sans-serif;
-   margin-left: 200px;
-  margin-right: 200px;
-  border: solid #ff6699;
-}
 
-#icons {
-  font-size: 24px;
-  
-  text-decoration:none; 
-  color:inherit;
-}
-
-#icons:hover {
-  color: pink;
-  text-decoration:none; 
-  color:inherit;
-}
-
-#fcc {
-  padding: 20px;
-   text-decoration:none; 
-  color:inherit;
-}
-
-#lnkdn {
-  padding: 20px;
-   text-decoration:none; 
-  color:inherit;
-}
-
-#git {
-  padding: 20px;
-   text-decoration:none; 
-  color:inherit;
-}
-
-#gmail {
-  padding: 20px;
-  
-}
+</body>
+</html>
