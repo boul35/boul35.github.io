@@ -1,107 +1,46 @@
-<!DOCTYPE html>
-<html>
-<head>
-<title> Jean-Philippe Moffet Website</title>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css?family=Trade+Winds&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css?family=Covered+By+Your+Grace&display=swap" rel="stylesheet">
-
-<link rel="stylesheet" type="text/css" href="stylesheet.css">
-</head>
-<body>
-<h1 id="Ah1">About Me</h1>
-<div class="clearfix">
-
- </div>
- <div class="container">
-    <img id="Mephoto" src="anime.png" alt="Picture of Me"></img>
-	<div class="overlay">
-	   
-		</div>
-		</div>
-
+/* Règles CSS à appliquer si la largeur de l'écran fait moins de 550 pixels */
+@media only screen and (max-width: 550px) {
+	/* Réduction de la taille de l'image */
+	header img {
+		width: 90%;
+		height: 90%;
+	}
+	/* le menu principal n'est plus disposé avec flex et reprend son 
+	comportement normal en se plaçant en-dessous de l'autre menu */
+	#conteneurflex 
+	{
+		display:block;
+	}
+	/* on fait disparaitre les menus */
+	#menuprincipal, #menusecondaire
+	{
+		display: none;
+	}
+	/* on fait apparaitre l'icône du menu pour petits écrans */
+	#iconemenu 
+	{
+		display:block;
+	}
+	#contenu
+	{
+		width: auto; /* s'ajuste automatiquement pour occuper toute la largeur disponible */
+	}
+	/* les sous-sections ne sont plus disposées en colonnes avec flex et reprennent leur 
+	comportement normal en se plaçant une au-dessus de l'autre */
+	.ligne {
+		display: block; 
+	}
+	.col {
+		width: 100%;
+	}
 	
-</div>
-<span>
-<h2 id="signature">Jean-Philippe Moffet ---></h2>
-<p id="aboutme"> "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident,
- similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio.
- Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus.
- Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae.
- Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat." </p>
-<div id="Portfolio" class="container-fluid">
-  <div class="portfolio">
-    <h2>Portfolio</h2>
-    <p>In process.<br>Will update with progress.</p>
-  </div>
-  <div id="pBtn" class="row">
-    <div class="col-md-4">
-      <button type="button" class="btn">
-	  <img src="linux.png" alt="Project"></img>
-    </button>
-    </div>
-    <div class="col-md-4">
-      <button type="button" class="btn">
-	  <img src="raspberry.png"alt="Project"></img>
-    </button>
-    </div>
-    <div class="col-md-4">
-      <button type="button" class="btn">
-	  <img src="litecoin.png" alt="Project"></img>
-    </button>
-    </div>
-  </div>
-</div>
-
-<!---CONTACT--->
-<div id="Contact" class="contact" class="container-fluid">
-  <div class="row">
-    <h1 style="text:center" class="col-sm-12">Contact Me:</h1>
-    <div class="row" id="icons">
-      <div class="col-sm-12">
-        <span id="gmail" class="fa fa-lrg">
-			<a  href="#"><i class="fa fa-2x fa-envelope"></i></a>
-		</span>
-
-
-        <span id="fcc" class="fa fa-lrg">
-	
-			<a href="#" target="blank"><i class="fa fa-free-code-camp fa-2x"></i></a>
-			
-	</span>
-
-
-        <span id="lnkdn" class="fa fa-lrg">
-          <a href="#" target="blank"><i class="fa fa-linkedin fa-2x"></i></a>
-          </span>
-
-        <span id="git" class="fa fa-lrg">
-		<a href="#" target="blank"><i class=" fa fa-github fa-2x"></i></a>
-	</span>
-
-      </div>
-      <!---Possibly use this in Contact form-
-	<div class="row">
-		<div class="col-xs-6">
-			<form class="action_page.php">
-				Name:<br>
-				<input type="text" name="Name" value="Your Name"></input>
-				<br><br> E-mail:
-				<br>
-				<input type="text" name="email" value="E-mail"></input><br><br>
-				<textarea name="Message" rows="10" cols="30">Message me.</textarea> 
-
---->
-    </div>
-  </div>
-</div>
-
-
-
-
-
-
-</body>
-</html>
+	.column {
+    flex: 33.33%;
+    padding: 5px;
+	column-count: 1;
+	}
+#audio1, #audio2, #audio3, #video1 {
+		
+		display: none;
+	}
+}
