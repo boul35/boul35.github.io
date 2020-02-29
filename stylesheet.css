@@ -87,14 +87,15 @@ li a:hover {
 #Mephoto {
   
  
-  background-color:red;
+ 
     color: white;
   
   border-radius: 320px;
      border: solid ;
-  
+ 
   margin-right: 230px;
   float: right;
+  margin-bottom: 202px;
   
   
   background-color: #FB4673;
@@ -357,7 +358,7 @@ img {
 		
 		  text-align: center;
   font-family: 'Nunito Sans', sans-serif;
-display: block;
+display: flex;
  width: 10px;
   margin: 10px;
 	}
