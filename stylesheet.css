@@ -312,7 +312,7 @@ img {
 	}
 
 /* Règles CSS à appliquer si la largeur de l'écran fait moins de 550 pixels */
-@media only screen and (max-width: 550px) {
+@media only screen and (max-width: 1520px) {
 	/* Réduction de la taille de l'image */
 	header img {
 		width: 90%;
