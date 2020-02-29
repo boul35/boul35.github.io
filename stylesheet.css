@@ -326,21 +326,47 @@ img {
 	{
 		margin: 0px;
 		padding: 0px;
+		width: 100%;
 	}
 	/* on fait apparaitre l'icône du menu pour petits écrans */
 	
 	#aboutme
 	{
 		margin: 0px; /* s'ajuste automatiquement pour occuper toute la largeur disponible */
+		width: 100%;
 		
 	}
 	
 	#Portfolio 
 	{
 		margin: 0px;
+		width: 100%;
 	
 		
 	}
+	
+	#signature {
+		
+		display: none;
+	}
+	
+	#pBtn {
+		
+		margin: 0px;
+		padding: 0px;
+		
+		  text-align: center;
+  font-family: 'Nunito Sans', sans-serif;
+display: block;
+ width: 10px;
+  margin: 10px;
+	}
+	
+	h3 {
+		
+		display: none;
+	}
+	
 	
 	img {
 		
