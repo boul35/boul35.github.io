@@ -201,7 +201,8 @@ img {
   padding: 10px 3px;
   font-family: 'Nunito Sans', sans-serif;
   display: flex;
-  margin-right: 120px;
+  margin-right: 120px;  
+  
   
   
 }
@@ -352,32 +353,35 @@ img {
 		
 		display: none;
 	}
-	
-	#pBtn {
-		
-		margin: 0px;
-		padding: 0px;
-		
-		  text-align: center;
-  font-family: 'Nunito Sans', sans-serif;
-display: flex;
- width: 10px;
-  margin: 10px;
-	}
+
 	
 	h3 {
 		
 		display: none;
 	}
 	
-	
-	#mephoto {
+	.btn {
+		
+		margin: 0px;
+		padding: 0px;
+		width: 100%;
+		margin-left: 0px;
+		display: block;
+	}
+	#Mephoto {
 		
 		padding: 0px;
 		border: none;
 		margin: 0px;
-		height: 200px;
+		height: 250px;
+		float: right;
 		
+	}
+	
+	img {
+		
+		margin: 0px;
+		padding: 0px;
 	}
 	/* les sous-sections ne sont plus disposées en colonnes avec flex et reprennent leur 
 	comportement normal en se plaçant une au-dessus de l'autre */
