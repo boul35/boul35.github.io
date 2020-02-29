@@ -75,8 +75,9 @@ li a:hover {
 
 #signature {
 	
-	color: grey;
+	color: #FB4673;
 	float: right;
+	font-size: 37 px;
 	font-family: 'Covered By Your Grace';
 
 }
@@ -86,15 +87,15 @@ li a:hover {
   
  
   background-color:red;
-  color: white;
+    color: white;
   
   border-radius: 320px;
-  border: solid ;
+     border: solid ;
   
+  margin-right: 230px;
   float: right;
-margin-right: 20px;
-margin-top: 0px;
-
+  
+  
   background-color: #FB4673;
   
   
@@ -102,42 +103,48 @@ margin-top: 0px;
  
    
 }
-.text {
 
- color: black;
- font-family: 'Ubuntu', sans-serif;
- font-size: 32px;
-	border: #FB4673;
-	margin: auto;
-	margin-left: 210px;
-	margin-top: 20px;
+
+h3 {
 	
+   position: absolute;
+	    
+	    width: 350px;
+	    height: 350px; 
+		
+	   
+	   font-size: 30px;
+	    opacity: 0;
+		background-color: silver;
+	    -webkit-transition: opacity 0.6s;
+	    -moz-transition: opacity 0.6s;
+	    transition: opacity 0.6s;
+       
+       line-height:200px;
+	     margin: 0 2px;
+  padding: 10px 3px;
+  font-family: 'Nunito Sans', sans-serif;
+  display: flex;
+  margin-right: 10px;
+	    border-radius: 12px;
 
- 
- 
- 
 }
+ h3:hover {
+	 
+	 opacity: 0.9;
+ }
 
-.container:hover .overlay {
-  opacity: 1;
+#text2 {
+	
+	  text-align: center;
+        display: block; 	
 }
-
-.overlay {
-  
-  opacity: 0;
-  transition: .5s ease;
-  background-color: transparent;
-  margin-right: 0px;
-  float: right;
-  
-}
-
-
 img {
   border: solid;
   border-radius: 25px;
   padding: 50px;
   float: left;
+
 }
 
 #Ah1 {
@@ -200,6 +207,7 @@ img {
 .btn:hover {
   font-family: 'Nunito Sans', sans-serif;
  box-shadow: 10px 9px 62px 82px rgba(223,35,60,0.65);
+  opacity: 1; 
 }
 
 #pBtn {
@@ -261,3 +269,51 @@ img {
   padding: 20px;
   
 }
+
+/* Règles CSS à appliquer si la largeur de l'écran fait moins de 550 pixels */
+@media only screen and (max-width: 550px) {
+	/* Réduction de la taille de l'image */
+	.btn {
+		width: 90%;
+		height: 90%;
+	}
+	/* le menu principal n'est plus disposé avec flex et reprend son 
+	comportement normal en se plaçant en-dessous de l'autre menu */
+	#portfolio
+	{
+		display:block;
+	}
+	/* on fait disparaitre les menus */
+	#menuprincipal, #menusecondaire
+	{
+		display: none;
+	}
+	/* on fait apparaitre l'icône du menu pour petits écrans */
+	#iconemenu 
+	{
+		display:block;
+	}
+	#portfolio
+	{
+		width: auto; /* s'ajuste automatiquement pour occuper toute la largeur disponible */
+	}
+	/* les sous-sections ne sont plus disposées en colonnes avec flex et reprennent leur 
+	comportement normal en se plaçant une au-dessus de l'autre */
+	.ligne {
+		display: block; 
+	}
+	.col {
+		width: 100%;
+	}
+	
+	.column {
+    flex: 33.33%;
+    padding: 5px;
+	column-count: 1;
+	}
+#audio1, #audio2, #audio3, #video1 {
+		
+		display: none;
+	}
+}
+
