@@ -14,6 +14,7 @@ body:before {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+
 }
 ul {
   list-style-type: none;
@@ -115,7 +116,7 @@ h3 {
 	   
 	   font-size: 30px;
 	    opacity: 0;
-		background-color: silver;
+		background-color: white;
 	    -webkit-transition: opacity 0.6s;
 	    -moz-transition: opacity 0.6s;
 	    transition: opacity 0.6s;
@@ -270,50 +271,84 @@ img {
   
 }
 
-/* Règles CSS à appliquer si la largeur de l'écran fait moins de 550 pixels */
-@media only screen and (max-width: 550px) {
-	/* Réduction de la taille de l'image */
-	.btn {
+/************************************************/
+/* Pour le design adaptatif (responsive design) */
+/************************************************/
+
+/* Règles CSS à appliquer si la largeur de l'écran est entre 550 pixels et 770 pixels */
+@media only screen and (min-width: 550px) and (max-width: 770px) {
+	/* Ajustement automatique de la taille de l'image dans l'en-tête*/
+	header img {
 		width: 90%;
 		height: 90%;
 	}
 	/* le menu principal n'est plus disposé avec flex et reprend son 
 	comportement normal en se plaçant en-dessous de l'autre menu */
-	#portfolio
+	#conteneurflex 
 	{
 		display:block;
 	}
-	/* on fait disparaitre les menus */
-	#menuprincipal, #menusecondaire
+	#menuprincipal li
 	{
-		display: none;
+		width: 99%;
+		text-align: right;
+		
 	}
-	/* on fait apparaitre l'icône du menu pour petits écrans */
-	#iconemenu 
-	{
-		display:block;
-	}
-	#portfolio
+	#contenu
 	{
 		width: auto; /* s'ajuste automatiquement pour occuper toute la largeur disponible */
 	}
-	/* les sous-sections ne sont plus disposées en colonnes avec flex et reprennent leur 
-	comportement normal en se plaçant une au-dessus de l'autre */
-	.ligne {
-		display: block; 
-	}
-	.col {
-		width: 100%;
-	}
-	
-	.column {
-    flex: 33.33%;
-    padding: 5px;
-	column-count: 1;
-	}
-#audio1, #audio2, #audio3, #video1 {
-		
-		display: none;
-	}
 }
 
+.column {
+    flex: 33.33%;
+    padding: 5px;
+	column-count: 2;
+	}
+	.column2 {
+    flex: 33.33%;
+    padding: 5px;
+	column-count: 2;
+	}
+
+/* Règles CSS à appliquer si la largeur de l'écran fait moins de 550 pixels */
+@media only screen and (max-width: 550px) {
+	/* Réduction de la taille de l'image */
+	header img {
+		width: 90%;
+		height: 90%;
+	}
+	/* le menu principal n'est plus disposé avec flex et reprend son 
+	comportement normal en se plaçant en-dessous de l'autre menu */
+
+	/* on fait disparaitre les menus */
+	#Contact
+	{
+		margin: 0px;
+		padding: 0px;
+	}
+	/* on fait apparaitre l'icône du menu pour petits écrans */
+	
+	#aboutme
+	{
+		margin: 0px; /* s'ajuste automatiquement pour occuper toute la largeur disponible */
+		
+	}
+	
+	#Portfolio 
+	{
+		margin: 0px;
+	
+		
+	}
+	
+	img {
+		
+		padding: 0px;
+		border: none;
+		margin: 0px;
+	/* les sous-sections ne sont plus disposées en colonnes avec flex et reprennent leur 
+	comportement normal en se plaçant une au-dessus de l'autre */
+
+
+}
