@@ -328,6 +328,7 @@ img {
 		margin: 0px;
 		padding: 0px;
 		width: 100%;
+		margin-top: 25px;
 	}
 	/* on fait apparaitre l'icône du menu pour petits écrans */
 	
@@ -335,13 +336,14 @@ img {
 	{
 		margin: 0px; /* s'ajuste automatiquement pour occuper toute la largeur disponible */
 		width: 100%;
-		
+		margin-top: 25px;
 	}
 	
 	#Portfolio 
 	{
 		margin: 0px;
 		width: 100%;
+		margin-top: 25px;
 	
 		
 	}
@@ -369,11 +371,14 @@ display: flex;
 	}
 	
 	
-	img {
+	#mephoto {
 		
 		padding: 0px;
 		border: none;
 		margin: 0px;
+		height: 200px;
+		
+	}
 	/* les sous-sections ne sont plus disposées en colonnes avec flex et reprennent leur 
 	comportement normal en se plaçant une au-dessus de l'autre */
 
