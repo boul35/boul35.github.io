@@ -86,15 +86,15 @@ li a:hover {
   
  
   background-color:red;
-    color: white;
+  color: white;
   
   border-radius: 320px;
-     border: solid ;
+  border: solid ;
   
-  margin-right: 230px;
   float: right;
-  
-  
+margin-right: 20px;
+margin-top: 0px;
+
   background-color: #FB4673;
   
   
@@ -261,51 +261,3 @@ img {
   padding: 20px;
   
 }
-
-/* Règles CSS à appliquer si la largeur de l'écran fait moins de 550 pixels */
-@media only screen and (max-width: 550px) {
-	/* Réduction de la taille de l'image */
-	.btn {
-		width: 90%;
-		height: 90%;
-	}
-	/* le menu principal n'est plus disposé avec flex et reprend son 
-	comportement normal en se plaçant en-dessous de l'autre menu */
-	#portfolio
-	{
-		display:block;
-	}
-	/* on fait disparaitre les menus */
-	#menuprincipal, #menusecondaire
-	{
-		display: none;
-	}
-	/* on fait apparaitre l'icône du menu pour petits écrans */
-	#iconemenu 
-	{
-		display:block;
-	}
-	#portfolio
-	{
-		width: auto; /* s'ajuste automatiquement pour occuper toute la largeur disponible */
-	}
-	/* les sous-sections ne sont plus disposées en colonnes avec flex et reprennent leur 
-	comportement normal en se plaçant une au-dessus de l'autre */
-	.ligne {
-		display: block; 
-	}
-	.col {
-		width: 100%;
-	}
-	
-	.column {
-    flex: 33.33%;
-    padding: 5px;
-	column-count: 1;
-	}
-#audio1, #audio2, #audio3, #video1 {
-		
-		display: none;
-	}
-}
-
