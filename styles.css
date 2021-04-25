@@ -1,6 +1,7 @@
 body {
   font-family: Arial, Helvetica, sans-serif;
   margin: 0;
+  background-color: grey;
 }
 
 
@@ -20,6 +21,33 @@ html {
   margin-bottom: 16px;
   padding: 0 8px;
 }
+
+
+#jpm {
+
+  text-emphasis: open triangle;
+  z-index: 12;
+  position: relative;
+  float: right;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 #Mephoto {
 
 
@@ -35,15 +63,17 @@ border-radius: 220px;
   font-family: Oswald;
   background-color: silver;
   color: black;
-  padding: 50px;
+  padding: 5px;
+
   font-family: 'Nunito Sans', sans-serif;
   margin-left: 200px;
   margin-right: 200px;
+  margin-top: 75px;
   text-align: center;
   border: solid white;
   border-radius: 30px;
-  height: 400px;
-  width: 400px;
+  height: 300px;
+  width: 300px;
   position: absolute;
 
 }
@@ -54,47 +84,58 @@ border-radius: 220px;
   transition-duration: 3s;
 
 }
+img:hover {
 
+
+
+}
 
 #linux2{
-  height: 400px;
-  width: 400px;
-  position: absolute;
+  font-size: 150px;
 
-  float: left;
+  font-family: 'Covered By Your Grace';
+  opacity: 0;
+ transition: .5s ease;
 
-    opacity: 0;
+ text-align: center;
+color: magenta;
+
+ height: 400px;
+ width: 400px;
+ position: absolute;
+ margin: auto;
+ margin-left: auto;
 
 }
 #linux2:hover{
     opacity: 1;
       transition-duration: 1.4s;
+      z-index: 1;
 
 }
 .about-section {
-  padding: 50px;
-  clear: right;
-  background-color: #474e5d;
+
+
+
   color: white;
   text-align: center;
   font-size: 18px;
   font-family: ;Oswald;
-  background-color: silver;
-  color: black;
-  padding: 50px;
-  font-family: 'Nunito Sans', sans-serif;
-  margin-left: 200px;
-  margin-right: 200px;
 
-  border: solid white;
-  opacity: 0.9;
-  border-radius: 30px
+
+
+   margin-top: 52px;
+  font-family: 'Nunito Sans', sans-serif;
+
+
 
 
 }
 
 .container {
+
   padding: 0 16px;
+
 }
 
 .container::after, .row::after {
