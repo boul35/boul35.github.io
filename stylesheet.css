@@ -1,165 +1,82 @@
-/*NavBar*/
-
-body:before {
-  content: "";
-  display: block;
-  position: fixed;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  z-index: -10;
-  background: url(wallpaper.jpg) no-repeat center center;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-
-}
-ul {
-  list-style-type: none;
+body {
+  font-family: Arial, Helvetica, sans-serif;
   margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: #333;
-}
-#pBtn {
-  text-align: center;
-  font-family: 'Nunito Sans', sans-serif;
-}
-
-li.name {
-  color: white;
-  dislpay: block;
-  text-align: center;
-  padding: 8px;
-  font-size: 16px;
-  font-family: 'Ubuntu', sans-serif;
-}
-
-@viewport {
-  width: device-width ;
-  zoom: 1.0 ;
-}
-
-li {
-  float: right;
-}
-
-li a {
-  border-radius: 12px;
-  color: white;
-  background-color: #222;
-  display: block;
-  text-align: center;
-  padding: 8px;
-  text-decoration: none;
-  font-size: 12px;
-  font-family: 'Nunito Sans', sans-serif;
-}
-
-li a:hover {
-  border-radius: 12px;
-  color: white;
-  text-decoration: none;
-  background-color: #111;
-  font-family: 'Nunito Sans', sans-serif;
 }
 
 
-/*EndNavBar*/
-.clearfix {
-	
-	
-	overflow: auto;
+html {
+  box-sizing: border-box;
 }
 
-#signature {
-	
-	color: #FB4673;
-	float: right;
-	font-size: 37 px;
-	font-family: 'Covered By Your Grace';
-
+*, *:before, *:after {
+  box-sizing: inherit;
 }
 
 
+
+.column {
+  float: left;
+  width: 33.3%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
 #Mephoto {
-  
- 
- 
-    color: white;
-  
-  border-radius: 320px;
-     border: solid ;
- 
-  margin-right: 230px;
-  float: right;
-  margin-bottom: 202px;
-  
-  
-  background-color: #FB4673;
-  
-  
-     
- 
-   
+
+
+border-radius: 220px;
+
+
 }
 
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 
-h3 {
-	
-   position: absolute;
-	    
-	    width: 350px;
-	    height: 350px; 
-		
-	   
-	   font-size: 30px;
-	    opacity: 0;
-		background-color: white;
-	    -webkit-transition: opacity 0.6s;
-	    -moz-transition: opacity 0.6s;
-	    transition: opacity 0.6s;
-       
-       line-height:200px;
-	     margin: 0 2px;
-  padding: 10px 3px;
-  font-family: 'Nunito Sans', sans-serif;
-  display: flex;
-  margin-right: 10px;
-	    border-radius: 12px;
-
-}
- h3:hover {
-	 
-	 opacity: 0.9;
- }
-
-#text2 {
-	
-	  text-align: center;
-        display: block; 	
-}
-img {
-  border: solid;
-  border-radius: 25px;
+  font-size: 18px;
+  font-family: Oswald;
+  background-color: silver;
+  color: black;
   padding: 50px;
+  font-family: 'Nunito Sans', sans-serif;
+  margin-left: 200px;
+  margin-right: 200px;
+  text-align: center;
+  border: solid white;
+  border-radius: 30px;
+  height: 400px;
+  width: 400px;
+  position: absolute;
+
+}
+.card:hover {
+
+  transform: scale(1.2);
+  opacity: 1;
+  transition-duration: 3s;
+
+}
+
+
+#linux2{
+  height: 400px;
+  width: 400px;
+  position: absolute;
+
   float: left;
 
-}
+    opacity: 0;
 
-#Ah1 {
-  font-family: 'Trade Winds';
-  text-align: center;
-  margin-top: 100px;
+}
+#linux2:hover{
+    opacity: 1;
+      transition-duration: 1.4s;
+
+}
+.about-section {
+  padding: 50px;
+  clear: right;
+  background-color: #474e5d;
   color: white;
-  font-size: 80px;
-  text-decoration: underline;
-}
-
-#aboutme {
-  text-align: left;
+  text-align: center;
   font-size: 18px;
   font-family: ;Oswald;
   background-color: silver;
@@ -168,223 +85,48 @@ img {
   font-family: 'Nunito Sans', sans-serif;
   margin-left: 200px;
   margin-right: 200px;
+
   border: solid white;
-}
-/* relevant styles */
+  opacity: 0.9;
+  border-radius: 30px
 
-.portfolio {
-  padding: 0px;
-  font-size: 20px;
-  text-align: center;
-  background-color: silver;
-  color: black;
-  font-family: 'Nunito Sans', sans-serif;
-  
-  
+
 }
 
-#Portfolio {
-  padding: 50px;
-  text-align: center;
-  background-color: silver;
-  color: black;
-  font-family: 'Ubuntu', sans-serif;
-   margin-left: 200px;
-  margin-right: 200px;
-  border: solid #ff6699;
-  
+.container {
+  padding: 0 16px;
 }
 
-.btn {
-  border-radius: 15px;
-  margin: 0 2px;
-  padding: 10px 3px;
-  font-family: 'Nunito Sans', sans-serif;
-  display: flex;
-  margin-right: 120px;  
-  
-  
-  
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
 }
 
-.btn:hover {
-  font-family: 'Nunito Sans', sans-serif;
- box-shadow: 10px 9px 62px 82px rgba(223,35,60,0.65);
-  opacity: 1; 
-}
-
-#pBtn {
-  text-align: center;
-  font-family: 'Nunito Sans', sans-serif;
-  display: flex;
- width: 10px;
-  margin: 10px;
-}
-
-#Contact {
-  padding: 30px;
-  text-align: center;
-  background-color: silver;
+.title {
   color: grey;
-  font-family: 'Ubuntu', sans-serif;
-    padding: 50px;
-  text-align: center;
- margin-top: 20px;
-  color: black;
-  font-family: 'Ubuntu', sans-serif;
-   margin-left: 200px;
-  margin-right: 200px;
-  border: solid #ff6699;
 }
 
-#icons {
-  font-size: 24px;
-  
-  text-decoration:none; 
-  color:inherit;
+
+
+
+#myVideo {
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
 }
 
-#icons:hover {
-  color: pink;
-  text-decoration:none; 
-  color:inherit;
-}
 
-#fcc {
-  padding: 20px;
-   text-decoration:none; 
-  color:inherit;
-}
-
-#lnkdn {
-  padding: 20px;
-   text-decoration:none; 
-  color:inherit;
-}
-
-#git {
-  padding: 20px;
-   text-decoration:none; 
-  color:inherit;
-}
-
-#gmail {
-  padding: 20px;
-  
-}
-
-/************************************************/
-/* Pour le design adaptatif (responsive design) */
-/************************************************/
-
-/* Règles CSS à appliquer si la largeur de l'écran est entre 550 pixels et 770 pixels */
-@media only screen and (min-width: 550px) and (max-width: 770px) {
-	/* Ajustement automatique de la taille de l'image dans l'en-tête*/
-	header img {
-		width: 90%;
-		height: 90%;
-	}
-	/* le menu principal n'est plus disposé avec flex et reprend son 
-	comportement normal en se plaçant en-dessous de l'autre menu */
-	#conteneurflex 
-	{
-		display:block;
-	}
-	#menuprincipal li
-	{
-		width: 99%;
-		text-align: right;
-		
-	}
-	#contenu
-	{
-		width: auto; /* s'ajuste automatiquement pour occuper toute la largeur disponible */
-	}
-}
-
-.column {
-    flex: 33.33%;
-    padding: 5px;
-	column-count: 2;
-	}
-	.column2 {
-    flex: 33.33%;
-    padding: 5px;
-	column-count: 2;
-	}
-
-/* Règles CSS à appliquer si la largeur de l'écran fait moins de 550 pixels */
-@media only screen and (max-width: 1520px) {
-	/* Réduction de la taille de l'image */
-	header img {
-		width: 90%;
-		height: 90%;
-	}
-	/* le menu principal n'est plus disposé avec flex et reprend son 
-	comportement normal en se plaçant en-dessous de l'autre menu */
-
-	/* on fait disparaitre les menus */
-	#Contact
-	{
-		margin: 0px;
-		padding: 0px;
-		width: 100%;
-		margin-top: 25px;
-	}
-	/* on fait apparaitre l'icône du menu pour petits écrans */
-	
-	#aboutme
-	{
-		margin: 0px; /* s'ajuste automatiquement pour occuper toute la largeur disponible */
-		width: 100%;
-		margin-top: 25px;
-	}
-	
-	#Portfolio 
-	{
-		margin: 0px;
-		width: 100%;
-		margin-top: 25px;
-	
-		
-	}
-	
-	#signature {
-		
-		display: none;
-	}
-
-	
-	h3 {
-		
-		display: none;
-	}
-	
-	.btn {
-		
-		margin: 0px;
-		padding: 0px;
-		width: 100%;
-		margin-left: 0px;
-		display: block;
-	}
-	#Mephoto {
-		
-		padding: 0px;
-		border: none;
-		margin: 0px;
-		height: 250px;
-		float: right;
-		
-	}
-	
-	img {
-		
-		margin: 0px;
-		padding: 0px;
-	}
-	/* les sous-sections ne sont plus disposées en colonnes avec flex et reprennent leur 
-	comportement normal en se plaçant une au-dessus de l'autre */
-
-
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
 }
