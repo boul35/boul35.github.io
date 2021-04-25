@@ -64,17 +64,25 @@ border-radius: 220px;
   background-color: silver;
   color: black;
   padding: 5px;
+  z-index: 0
+  text-align:justify;
+    text-justify:inter-word;;
 
   font-family: 'Nunito Sans', sans-serif;
   margin-left: 200px;
   margin-right: 200px;
   margin-top: 75px;
-  text-align: center;
+
   border: solid white;
   border-radius: 30px;
   height: 300px;
   width: 300px;
   position: absolute;
+
+  -webkit-user-select: none;  /* Chrome all / Safari all */
+  -moz-user-select: none;     /* Firefox all */
+  -ms-user-select: none;      /* IE 10+ */
+  user-select: none;          /* Likely future */
 
 }
 .card:hover {
@@ -82,6 +90,8 @@ border-radius: 220px;
   transform: scale(1.2);
   opacity: 1;
   transition-duration: 3s;
+  z-index: 1;
+  text-align: center;
 
 }
 img:hover {
@@ -99,13 +109,14 @@ img:hover {
 
  text-align: center;
 color: magenta;
-
+z-index: 1;
  height: 400px;
  width: 400px;
  position: absolute;
  margin: auto;
  margin-left: auto;
- font-size:12vw;
+ font-size:10vw;
+
 
 }
 #linux2:hover{
@@ -114,11 +125,34 @@ color: magenta;
       z-index: 1;
 
 }
+
+#linux3 {
+
+  border-radius: 10px;
+}
+
+
+
+.dot {
+  height: 220px;
+  width: 220px;
+  border-color: red;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+
+
+
+
+
+
 .about-section {
 
 
 
-  color: white;
+
   text-align: center;
   font-size: 18px;
   font-family: ;Oswald;
@@ -127,6 +161,10 @@ color: magenta;
 
    margin-top: 52px;
   font-family: 'Nunito Sans', sans-serif;
+  -webkit-user-select: none;  /* Chrome all / Safari all */
+  -moz-user-select: none;     /* Firefox all */
+  -ms-user-select: none;      /* IE 10+ */
+  user-select: none;          /* Likely future */
 
 
 
@@ -173,8 +211,8 @@ color: magenta;
  width: 100vw;
  height: 100vh;
  max-width: 100% !important;
- margin: 0px;
- padding: 0px;
+
+ margin : 2rem auto;
 
 
 
