@@ -105,6 +105,7 @@ color: magenta;
  position: absolute;
  margin: auto;
  margin-left: auto;
+ font-size:8vw;
 
 }
 #linux2:hover{
@@ -135,6 +136,7 @@ color: magenta;
 .container {
 
   padding: 0 16px;
+  display: block;
 
 }
 
@@ -167,12 +169,21 @@ color: magenta;
 
 @media screen and (max-width: 650px) {
   .column {
-      
-  width: 100vw;
+
+ width: 100vw;
  height: 100vh;
  max-width: 100% !important;
  margin: 0px;
  padding: 0px;
-    
+
+
+
   }
+}
+
+
+@media(hover: hover) and (pointer: fine) {
+    nav a:hover {
+        background: yellow;
+    }
 }
